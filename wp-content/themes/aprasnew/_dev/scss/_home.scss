@@ -1,0 +1,288 @@
+#sessao-chamada-1 {
+    @media (max-width:992px) {
+        padding:0px !important;
+    }
+}
+
+#apras-coluna-esquerda {
+
+    @media (min-width:1200px) {
+
+        flex: 1 0 52%;
+        max-width:52%;
+        
+    }
+
+
+   
+
+    flex: 1 0 100%;
+    max-height: 320px;
+    padding:1px !important;
+
+    .title-h3 {
+        color:$ternary-color;
+    }
+
+    .column-box {
+        padding-top: 60px !important;
+        padding-bottom: 90px !important;
+        padding-left:9px !important;
+        padding-right:9px !important;
+
+        p {
+            font-size: 19px;
+        }
+
+    }
+
+    @media (max-width:768px) {
+     
+        padding: 0px !important;
+        margin-bottom:10px;
+        margin-top:0px;
+       
+    }
+}
+
+#apras-coluna-direita {
+    padding:3px !important;
+
+   
+    p {
+        font-size: 17px;
+    }
+
+    @media (min-width:1200px) {
+
+        flex: 1 0 48%;
+        max-width:48%;
+        
+    }
+
+    .column-box {
+
+        padding-left:40px !important;
+        padding-right:40px !important;
+        padding-top:60px !important;
+
+        p {
+            text-align: justify;
+        }
+
+    }
+
+
+    flex: 1 0 100%;
+
+    @media (max-width:992px) {
+     margin-top:0px !important;
+    }
+    @media (max-width:768px) {
+     
+        padding: 0px !important;
+       
+    }
+}
+
+
+
+#a-empresa {
+    .title-h3 {
+        color:$secondary-color;
+    }
+
+    @media (max-width:768px) {
+        margin-top: 10px;
+        padding:10px !important;
+    }
+}
+
+#destaques-area {
+    z-index: 1;
+    @media (max-width:768px) {
+        margin-top: 5px;
+        padding-left: 20px !important;
+padding-right: 20px !important;
+    }
+}
+
+.destaques-content-box {
+
+    margin-bottom:30px;
+
+h2 {
+    text-transform: uppercase;
+    color:$secondary-color;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+
+    @media (max-width:768px) {
+        font-size: 18px;
+    }
+
+    
+}
+
+    &:hover {
+        .icon-area i {
+            background: $secondary-color;
+            color:white;
+        }
+    }
+
+.icon-area 
+{
+
+i {
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    font-size: 1.4em;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: #f1f1f1;
+    padding:25px;
+    border: 2px solid $secondary-color;
+    color:$secondary-color;
+
+    @media (max-width:768px) {
+
+    }
+
+}
+}
+
+}
+
+#banner-alunos {
+    height:400px;
+    @media (max-width:320px) {
+        max-height:200px;
+    }
+
+    @media (max-width:768px) {
+        max-height:250px;
+    }
+}
+
+
+#logo-alunos {
+    z-index: 0;
+    #banner-alunos {
+        z-index: 0;
+        margin-top:-100px;
+
+        @media (max-width:1200px) {
+            margin-top:10px;
+        }
+
+    }
+}
+
+
+
+#banner-algodao {
+
+    width: 100%;
+    margin-top: -110px;
+    z-index: 0;
+    height: 500px;
+    
+    
+    @media (max-width:768px) {
+        margin-top: -30px;
+        padding:20px !important;
+        p {
+            font-size:18px !important;
+        }
+    }
+
+    @media (max-width:320px) {
+        margin-top: -10px;
+        padding:20px !important;
+        p {
+            font-size:18px !important;
+        }
+    }
+
+
+    
+
+    display: flex;
+    justify-content: flex-end;
+
+     .btn-confira {
+        font-weight: bold;
+        border-radius: 43px;
+        border-width: 2px;
+        border-color: #ffffff;
+        border-style: solid;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 15px 30px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 20px;
+        transition: 0.3s all;
+        cursor: pointer;
+        &:hover {
+        
+                background-color: white;
+            color: rgb(103,190,174);
+            text-decoration: none;
+
+        }
+
+
+     }
+
+
+    .text-box {
+        text-align: right;
+
+        .text-box-inner {
+            height:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-weight: 700;
+                color:white;
+                font-size: 36px;
+            }
+        
+            p {
+                font-size: 23px;
+                font-weight: 500;
+                color:white;
+            }
+        
+            h3 {
+               color:  #67beae;
+            }
+        
+            h1,h3 {
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+
+}
+
+
+#contato-left-block {
+    h1,h2,h3,h4,h5,h6,p,b,small,label,i {
+        color:#f1f1f1 !important;
+    }
+}
+

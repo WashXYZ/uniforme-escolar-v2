@@ -1,0 +1,120 @@
+.column-box {
+    box-shadow: 0 20px 40px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    background: white;
+    align-items: center;
+}
+
+.border-line {
+    height: 1px;
+    border: 2px solid #67beae;
+    border-top: 1px solid #EBEBEB;
+    border-top-color: rgb(235, 235, 235);
+    border-top-width: 1px;
+    display: block;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+
+#wrap-right, #customers-area {
+
+    .border-line {
+        width: 6rem !important;
+    }
+
+    &.box {
+        padding:5px !important;
+    }
+
+    .wpb_animate_when_almost_visible{
+        display: none;
+    }
+}
+
+
+.border-line-white {
+    height: 1px;
+    border: 2px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+    border-top-color: rgb(235, 235, 235);
+    border-top-width: 1px;
+    display: block;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+
+
+.case-thumbnail {
+    @include box-shadow(#ccc 0px 0px 15px);
+    width:200px;
+    height:200px;
+    background:white;
+}
+
+
+.border-line-inverse {
+    height: 1px;
+    border: 2px solid white;
+    border-top: 1px solid white;
+    border-top-color: rgb(235, 235, 235);
+    border-top-width: 1px;
+    display: block;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+
+.background-fixed-effect {
+    background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+}
+
+
+#contato-footer {
+    background: $ternary-color; 
+
+    h1 {
+        color:white;
+        font-weight: 700;
+    }
+}
+
+#body-nav-flag {
+    padding:10px;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    z-index:0;
+    i {
+        color:#f1f1f1;
+    }
+
+    &.show {
+        opacity: 1;
+    }
+
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index:9999999;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+
+
+
+.btn-primary-dark {
+    color:#fff !important;
+    background-color: $ternary-color !important;
+    opacity:1;
+    transition: 0.3s all;
+    &:hover {
+        opacity:0.9;
+    }
+}

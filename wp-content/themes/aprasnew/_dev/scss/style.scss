@@ -1,0 +1,125 @@
+/*
+Theme Name: AprasUniformes 
+Theme URI: http://uniformeescolar.com.br
+Description: Tema padrao do site de uniforme escolar da empresa Apras Uniformes
+Author: Washington de Sousa Meneses
+Author URI: http://wsxdevstudio.com.br/
+Version: 1.0
+License: GNU General Public License
+Text Domain: aprasdefault
+*/
+@import "compass/css3";
+@import "_variables";
+@import "_css";
+@import "_components";
+@import "_footer";
+@import "_typography";
+@import "_mainNav";
+@import "_slider";
+@import "_home";
+@import 'compass/css3';
+
+
+
+@media (min-width: 1200px) {
+    .container-apras {
+        max-width: 1150px !important;
+
+    }
+
+}
+
+.container-apras {
+    width:100% !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    color:#666;
+}
+
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+
+
+.bg-darkness {
+    background:#000;
+}
+
+#navbarSupportedContent {
+    flex-grow: 0 !important;
+}
+
+.gray-bg-box {
+    background: #f1f1f1;
+}
+
+.pad-container {
+    padding:70px;
+
+    @media(max-width:768px) {
+            
+            padding:30px;
+
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+.business-container * .material-icons {
+    font-size:1.6em;
+    vertical-align: middle;
+} 
+
+.box {
+
+    padding:30px;
+    margin:10px;
+
+    @media (max-width: 768px) {
+
+    padding:0px;
+    margin:0px;
+    margin-bottom:30px;
+    }
+}
+
+.top-box {
+    padding:50px;
+    background:rgba(0,0,0,0.6);
+        border-radius:50px 10px 30px;
+
+        p, h3, a {
+@include text-shadow(#000 0px 0px 10px);
+
+        }
+
+        transition: background 0.5s;
+}
+
+.top-box:hover {
+   background:rgba(0,0,0,0.8);
+}
+
+.top-box-container {
+    margin-top:50px;
+
+}
+
+
+
+
+.carousel-control-prev, .carousel-control-next {
+
+font-size: 4.5em;
+
+
+}

@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+
+  wordpress:
+    image: wordpress:latest
+    container_name: uniformeescolar
+    networks:
+      - nginx 
+    restart: unless-stopped
+    environment:
+      - WORDPRESS_DEBUG=0
+      - WORDPRESS_DB_HOST=host.docker.internal:3306
+      - WORDPRESS_DB_USER=uniformeescolar
+      - WORDPRESS_DB_PASSWORD=Mudar*140418
+      - WORDPRESS_DB_NAME=uniformeescolar
+    volumes:
+        - ./wp-content:/var/www/html/wp-content
+    extra_hosts:
+        - "host.docker.internal:host-gateway"
+    ports:
+      - "50045:80"
+networks:
+  default:
+    external:
+      name: nginx
+  nginx:
+    external: true

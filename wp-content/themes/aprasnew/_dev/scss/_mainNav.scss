@@ -1,0 +1,92 @@
+
+#wpadminbar {
+    //display: none;
+}
+
+#top-background {
+//@include box-shadow(#ccc 2px 2px 5px);
+//margin-bottom:15px;
+z-index:9999;  
+background: white;
+
+        &.fixed {
+
+            position: fixed;
+            width:100%;
+            @include box-shadow(#ccc 2px 2px 5px);
+            #mainNav {
+                .img-logo {
+                    width:90px;
+                }
+
+            }
+
+        }
+}
+
+@media (max-width:768px) {
+
+
+.menu-menu-principal-container ul li 
+{
+
+    width: 100%;
+    padding:5px !important;
+    text-align: center;
+
+    &:active {
+        background-color: #f1f1f1;
+    }
+
+a {
+    
+        width: 100%;
+
+
+}
+}
+
+}
+#mainNav {
+    position:relative;
+    top:0px;
+    width:100%;
+    z-index:9999;  
+
+    z-index: 999999999;
+height: auto;
+display: flex;
+background:
+#fff;
+
+
+    .navbar-nav {
+
+            li { 
+                
+                margin-right: 25px;
+                
+                a{
+                transition:all 0.3s;    
+                color:$primary-color;
+                font-family: 'Montserrat' !important;
+                font-size: 14px;
+                &:hover {
+                    color: $secondary-color;
+                    text-decoration:none;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+.img-logo {
+    width: 140px;
+} 
+
+#navbar {
+    justify-content: flex-end;
+}

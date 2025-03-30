@@ -1,0 +1,112 @@
+.carousel-caption {
+
+    position:absolute;
+    bottom:12% !important;
+    height:270px;
+    left: 10% !important;
+    width:auto;
+    text-align: left !important;
+
+    @media (max-width:768px) {
+        top:20%;
+
+    }
+
+    @media (max-width:500px) {
+        top:30%;
+    }
+
+
+.logo-text-style {
+    font-weight: normal;
+    font-family: 'ScriptEspecial', cursive;
+    font-size: 6em;
+    color: #67beae;
+    text-shadow: #333 0px 0px 3px;
+
+
+    @media (max-width:1200px) {
+        font-size: 3.1em;
+        
+    }
+
+    @media (max-width:768px) {
+        font-size: 2.1em;
+        
+    }
+}
+
+p {
+    color:white;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-size: 6em;
+
+    @media (max-width:1200px) {
+        font-size: 3.1em;
+        
+    }
+
+
+    @media (max-width:768px) {
+        font-size: 1.2em;
+        
+    }
+
+}
+
+    }
+    
+    .carousel-item-container {
+        display:block;
+        background-attachment: scroll;
+        background-position-x: center;
+        background-position-y: center;
+        height:100%;
+     
+        color:#fff;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        perspective: 1000px;
+
+        @media (max-width:768px) {
+            height:250px;
+            background-position: center center;
+            background-size: auto 100%;
+            background-color: transparent;
+        }
+
+        @media (max-width:500px) {
+            height:250px;
+            background-position: center center;
+            background-size: cover;
+            background-color: transparent;
+        }
+
+
+
+        @media (max-width:320px) {
+            height:180px;
+            background-position: center center;
+            background-size: cover;
+            background-color: transparent;
+        }
+    }
+    
+
+    #slider {
+        position: relative;
+        background:#000;
+
+
+        .carousel-control {
+            @media screen and (max-width: 768px){
+                    display: none;
+            }
+        }
+
+
+    }
+    
+    

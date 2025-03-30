@@ -1,0 +1,28 @@
+{
+  "name": "wsx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "bootstrap": "^4.4.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.4.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery-touchswipe": "^1.6.19",
+    "slick-carousel": "^1.8.1"
+  }
+}
