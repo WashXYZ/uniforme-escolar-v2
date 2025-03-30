@@ -36193,6 +36193,11 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+#mainNav .menu-item a {
+  text-transform: uppercase;
+
+}
 /*# sourceMappingURL=bootstrap.css.map */
 </style>
 
