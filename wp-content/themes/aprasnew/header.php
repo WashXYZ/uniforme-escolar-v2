@@ -36200,7 +36200,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 <nav id="mainNav" class="navbar navbar-expand-lg navbar-light justify-content-between container">
 
-   <a class="navbar-brand"  href="<?= home_url(); ?>"><img alt="Logo Principal Apras" width="140" height="auto" src="<?= wp_get_attachment_url(get_theme_mod('custom_logo')); ?>" class="img-logo"/> </a>
+   <a class="navbar-brand"  href="<?= home_url(); ?>"><img alt="Logo Principal Apras Uniformes" width="140" height="auto" src="<?= wp_get_attachment_url(get_theme_mod('custom_logo')); ?>" class="img-logo"/> </a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
