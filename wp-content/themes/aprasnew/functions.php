@@ -248,6 +248,20 @@ function createPostTypes() {
         )
     );
 
+    register_post_type( 'produtos',
+    
+    array(
+        'labels' => array(
+            'name' => __( 'Produtos' ),
+            'singular_name' => __( 'Produto' )
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'produtos'),
+        'supports' => array( 'thumbnail', 'title' )
+    )
+);
+
     register_post_type( 'paginas_especiais',
     
         array(
