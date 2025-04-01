@@ -252,8 +252,8 @@ function createPostTypes() {
     
     array(
         'labels' => array(
-            'name' => __( 'Produtos' ),
-            'singular_name' => __( 'Produto' )
+            'name' => __( 'Uniformes Escolares' ),
+            'singular_name' => __( 'Uniforme' )
         ),
         'public' => true,
         'has_archive' => true,

@@ -8,7 +8,7 @@
 
 <div class="w-100 text-center">
 
-<h1 class="title-h3 primary-lighten">  Produtos </h1>
+<h1 class="title-h3 primary-lighten">  Uniformes Escolares </h1>
 
 <div class="border-line mt-40 mb-60 w-7 margin-auto"></div>
 </div>
