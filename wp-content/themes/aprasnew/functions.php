@@ -244,7 +244,7 @@ function createPostTypes() {
             'public' => true,
             'has_archive' => true,
             'rewrite' => array('slug' => 'cases'),
-            'supports' => array( 'thumbnail', 'title' )
+            'supports' => array( 'thumbnail', 'title','editor', 'author', 'excerpt' ,'headway-seo' )
         )
     );
 
@@ -365,6 +365,56 @@ add_action("slider", "sliderTemplate");
 add_action("socialNet", "SocialNetworkTopHeader");
 
 
+
+add_action( 'add_meta_boxes_cases', 'meta_box_for_cases' );
+function meta_box_for_cases( $post ){
+    add_meta_box( 'my_meta_box_custom_id', __( 'Tipo de Caso de Uso', 'aprascustomtheme' ), 'my_custom_meta_box_html_output', 'cases', 'normal', 'low' );
+}
+
+function my_custom_meta_box_html_output( $post ) {
+    wp_nonce_field( basename( __FILE__ ), 'my_custom_meta_box_nonce' ); //used later for security
+    ?>
+     <label>Tipo de divulgação</label>
+     <p><input type="radio" name="case_type" <?=get_post_meta($post->ID, 'case_type',true) == "Localidade" ? "checked" : "" ?> value="Localidade"/><label for="case_type"><?= __('Localidade', 'textdomain') ?></label></p>
+     <p><input type="radio" name="case_type" <?=get_post_meta($post->ID, 'case_type',true) == "Cidade" ? "checked" : "" ?> value="Cidade"/><label for="case_type"><?= __('Cidade', 'textdomain') ?></label></p>
+     <p><input type="radio" name="case_type" <?=get_post_meta($post->ID, 'case_type',true) == "Estado" ? "checked" : "" ?> value="Estado"/><label for="case_type"><?= __('Estado', 'textdomain') ?></label></p>
+
+     <p><input type="radio" name="case_type"    <?=get_post_meta($post->ID, 'case_type',true) == "Colegio" ? "checked" : "" ?> value="Colegio" /><label for="case_type"><?= __('Colégio', 'textdomain') ?></label></p>
+
+     <label>Referência</label>
+     <p><input type="radio" name="reference" <?=get_post_meta($post->ID, 'reference',true) == "Na" ? "checked" : "" ?> value="Na"/><label for="reference"><?= __('Na', 'textdomain') ?></label></p>
+     <p><input type="radio" name="reference"    <?=get_post_meta($post->ID, 'reference',true) == "No" ? "checked" : "" ?> value="No" /><label for="reference"><?= __('No', 'textdomain') ?></label></p>
+     <p><input type="radio" name="reference"    <?=get_post_meta($post->ID, 'reference',true) == "Em" ? "checked" : "" ?> value="Em" /><label for="reference"><?= __('Em', 'textdomain') ?></label></p>
+
+   <?php
+}
+
+add_action( 'save_post', 'team_member_save_meta_boxes_data', 10, 2 );
+function team_member_save_meta_boxes_data( $post_id ){
+    // check for nonce to top xss
+
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+    if ( $parent_id = wp_is_post_revision( $post_id ) ) {
+        $post_id = $parent_id;
+    }
+
+    if ( !isset( $_POST['my_custom_meta_box_nonce'] ) || !wp_verify_nonce( $_POST['my_custom_meta_box_nonce'], basename( __FILE__ ) ) ){
+        return;
+    }
+
+    // check for correct user capabilities - stop internal xss from customers
+    if ( ! current_user_can( 'edit_post', $post_id ) ){
+        return;
+    }
+    // update fields
+    if ( isset( $_REQUEST['case_type'] ) ) {
+        update_post_meta( $post_id, 'case_type', sanitize_text_field( $_POST['case_type'] ) );
+    }
+
+    if ( isset( $_REQUEST['reference'] ) ) {
+        update_post_meta( $post_id, 'reference', sanitize_text_field( $_POST['reference'] ) );
+    }
+}
 
 
 
