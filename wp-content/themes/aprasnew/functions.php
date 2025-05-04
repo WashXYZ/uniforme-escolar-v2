@@ -375,10 +375,10 @@ function my_custom_meta_box_html_output( $post ) {
     wp_nonce_field( basename( __FILE__ ), 'my_custom_meta_box_nonce' ); //used later for security
     ?>
      <label>Tipo de divulgação</label>
+     <p><input type="radio" name="case_type"    <?=get_post_meta($post->ID, 'case_type',true) == "Nenhum" ? "checked" : "" ?> value="Nenhum" /><label for="case_type"><?= __('Nenhum', 'textdomain') ?></label></p>
      <p><input type="radio" name="case_type" <?=get_post_meta($post->ID, 'case_type',true) == "Localidade" ? "checked" : "" ?> value="Localidade"/><label for="case_type"><?= __('Localidade', 'textdomain') ?></label></p>
      <p><input type="radio" name="case_type" <?=get_post_meta($post->ID, 'case_type',true) == "Cidade" ? "checked" : "" ?> value="Cidade"/><label for="case_type"><?= __('Cidade', 'textdomain') ?></label></p>
      <p><input type="radio" name="case_type" <?=get_post_meta($post->ID, 'case_type',true) == "Estado" ? "checked" : "" ?> value="Estado"/><label for="case_type"><?= __('Estado', 'textdomain') ?></label></p>
-
      <p><input type="radio" name="case_type"    <?=get_post_meta($post->ID, 'case_type',true) == "Colegio" ? "checked" : "" ?> value="Colegio" /><label for="case_type"><?= __('Colégio', 'textdomain') ?></label></p>
 
      <label>Referência</label>

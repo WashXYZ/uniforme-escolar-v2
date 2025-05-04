@@ -14,7 +14,7 @@
 
 </footer>
 
-<footer class="container-fluid p-2 main-footer">
+<footer class="container-fluid p-2 main-footer" style="max-width: 100% !important ">
 
   <div class="row">
 

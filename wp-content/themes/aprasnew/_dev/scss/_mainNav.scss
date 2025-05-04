@@ -13,7 +13,7 @@ background: white;
 
             position: fixed;
             width:100%;
-            @include box-shadow(#ccc 2px 2px 5px);
+            @include boxShadow(#ccc, 2px, 2px, 5px);
             #mainNav {
                 .img-logo {
                     width:90px;
@@ -71,6 +71,7 @@ background:
                 color:$primary-color;
                 font-family: 'Montserrat' !important;
                 font-size: 14px;
+                text-transform: uppercase;
                 &:hover {
                     color: $secondary-color;
                     text-decoration:none;

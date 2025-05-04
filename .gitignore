@@ -7,3 +7,5 @@
 # you can delete this whole section/until Configuration.
 /cache
 /wp-content/cache
+/node-modules
+/wp-content/themes/aprasnew/node_modules

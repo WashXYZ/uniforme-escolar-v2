@@ -8,7 +8,14 @@ Version: 1.0
 License: GNU General Public License
 Text Domain: aprasdefault
 */
-@import "compass/css3";
+@mixin boxShadow($color, $hposition, $vposition, $fog) {
+    box-shadow: $color, $hposition, $vposition, $fog;
+}
+
+@mixin textShadow($color, $hposition, $vposition, $fog) {
+    text-shadow: $color, $hposition, $vposition, $fog;
+}
+
 @import "_variables";
 @import "_css";
 @import "_components";
@@ -17,7 +24,6 @@ Text Domain: aprasdefault
 @import "_mainNav";
 @import "_slider";
 @import "_home";
-@import 'compass/css3';
 
 
 
@@ -33,6 +39,10 @@ Text Domain: aprasdefault
     width:100% !important;
     margin-right: auto;
     margin-left: auto;
+}
+
+.container-fluid {
+    max-width: 1920px !important;
 }
 
 body {
@@ -98,7 +108,7 @@ body {
         border-radius:50px 10px 30px;
 
         p, h3, a {
-@include text-shadow(#000 0px 0px 10px);
+@include textShadow(#000, 0px, 0px, 10px);
 
         }
 
@@ -123,3 +133,4 @@ font-size: 4.5em;
 
 
 }
+

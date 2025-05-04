@@ -38,12 +38,3 @@
 
 </div>
 <?php get_footer(); ?>
-
-<style> 
-.produto-thumbnail {
-    box-shadow: 0 20px 40px 10px rgba(0, 0, 0, .1);
-    padding: 100px 0;
-    border-radius: 0 40px 40px;
-    background-color: #fff;
-}
-</style>

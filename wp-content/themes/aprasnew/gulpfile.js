@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var gulp_concat = require('gulp-concat');
-var gulp_compass = require('gulp-compass');
+const sass = require('gulp-sass')(require('sass'));
 var sync = require('browser-sync').create();
 
 gulp.task('copylib', function() {
@@ -16,13 +16,8 @@ gulp.src('./node_modules/font-awesome/fonts/**/*').pipe(gulp.dest('./webfonts'))
 
 gulp.task('sass', function() {
 
-var stream = gulp.src('./_dev/scss/style.scss').pipe(gulp_compass({
-
-'sass':'./_dev/scss',
-'config_file': './config.rb',
-'css': './',
-
-}))
+var stream = gulp.src('./_dev/scss/style.scss')
+.pipe(sass().on('error', sass.logError))
 .pipe(gulp.dest('./css'));
 
 return stream;
@@ -50,10 +45,9 @@ gulp.task('concatCss', function() {
 
     var stream =  
     
-    gulp.src(['./style.css', './css/bootstrap.css', "./node_modules/slick-carousel/slick/slick.css", 
-    "./node_modules/slick-carousel/slick/slick-theme.css",
+    gulp.src(['./css/style.css', './css/bootstrap.css', 
     './css/font-awesome.css']).
-    pipe(gulp_concat('style.css')).pipe(gulp.dest('./'));
+    pipe(gulp_concat('header-inCSS.php')).pipe(gulp.dest('./'));
     
     return stream;
     

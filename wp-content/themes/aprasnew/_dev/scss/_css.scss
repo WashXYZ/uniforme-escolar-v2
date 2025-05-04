@@ -124,20 +124,20 @@ html {
     }
 
     .py-#{$i} {
-        padding-top: #{$i}px!important;
+        padding-top: #{$i}px !important;
         padding-bottom: #{$i}px !important;
     }
 
     .p-#{$i} {
-        padding: #{$i}px!important;
+        padding: #{$i}px !important;
     }
 
     .m-#{$i} {
-       margin: #{$i}px!important;
+       margin: #{$i}px !important;
     }
 
     .w-#{$i} {
-       width: #{$i}%!important;
+       width: #{$i}#{'%'}!important;
      }
  
 
