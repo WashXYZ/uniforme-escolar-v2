@@ -3,7 +3,7 @@
 <div class="container-fluid mainContent">
 <div class="row p-35 pt-50">
 
-<div id="wrap-left" class="col-xl-6 col-md-6 col-lg-6 col-12">
+<div id="wrapLeft" class="col-xl-6 col-md-6 col-lg-6 col-12">
 
 <?php
  while ( have_posts() ) : the_post(); ?>
@@ -33,7 +33,7 @@
 
 
 
-<div id="wrap-right"  class="col-xl-6 col-md-6 col-lg-6 col-12  column-box p-35 lt-rounded-50  rb-rounded-50" style="font-size: 18px;transform: scale(1.1)">
+<div id="wrapRight"  class="col-xl-6 col-md-6 col-lg-6 col-12  column-box p-35 lt-rounded-50  rb-rounded-50" style="font-size: 18px;transform: scale(1.1)">
     
 <p>
 O algodão é uma fibra utilizada para vestuário desde a antiguidade. É uma fibra natural constituída basicamente por celulose e tem capacidade de absorção de umidade de até 8%. Por isso é uma das fibras mais indicadas para nosso clima tropical.
@@ -49,12 +49,12 @@ Para atender a segmentos de tecidos tecnológicos, produzimos ainda malhas com m
 </div> 
 
 
-<div class="col-xl-6 col-md-6 col-lg-6 col-12">
+<div id="algodaoSection" class="col-xl-6 col-md-6 col-lg-6 col-12">
     <img src="<?= get_template_directory_uri().'/img/algodao1.png';?>" class="img-fluid rb-rounded-50" style="transform: scale(1.1)"/>
 </div>
 
 
-<div class="col-xl-6 col-md-6 col-lg-6 col-12 pt-200 pl-50">
+<div id="valoresBriefing" class="col-xl-6 col-md-6 col-lg-6 col-12 pt-200 pl-50">
 
 <h1 class="title-h5 mb-5" style="color: #003e81;"> Nosso algodão é proveniente de empresas que: </h1>
 
@@ -70,3 +70,32 @@ Para atender a segmentos de tecidos tecnológicos, produzimos ainda malhas com m
 </div>
 <?php get_footer(); 
 ?>
+<style>
+@media (max-width: 768px) {
+
+.mainContent {
+    .row {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+        padding-top: 30px;
+    }
+}
+
+#valoresBriefing
+{
+    padding-top:140px !important;
+}
+
+#algodaoSection {
+        padding: 0px;
+        margin-top: 140px;
+        img {
+            width: 100%;
+            transform: scale(2) !important;
+            border-radius: 0px !important;
+        }
+    }
+}
+
+</style>
