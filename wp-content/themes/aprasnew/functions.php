@@ -234,6 +234,38 @@ function assetsOnPHPTop() {
 
 function createPostTypes() {
  
+
+
+    register_post_type( 'institucional',
+    
+    array(
+        'labels' => array(
+            'name' => __( 'Institucional' ),
+            'singular_name' => __( 'institucional' )
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'institucional'),
+        'supports' => array( 'thumbnail', 'title','editor', 'author', 'excerpt' ,'headway-seo' )
+    )
+    );
+
+
+    register_post_type( 'clientes',
+    
+    array(
+        'labels' => array(
+            'name' => __( 'Clientes' ),
+            'singular_name' => __( 'clientes' )
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'clientes'),
+        'supports' => array( 'thumbnail', 'title','editor', 'author', 'excerpt' ,'headway-seo' )
+    )
+    );
+
+
     register_post_type( 'cases',
     
         array(

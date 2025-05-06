@@ -25766,10 +25766,19 @@ h2.secondary {
 #logo-alunos #banner-alunos {
   z-index: 0;
   margin-top: -100px;
+  margin-bottom: 200px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1378px) {
   #logo-alunos #banner-alunos {
     margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #logo-apras-grande {
+    margin-top: 300px !important;
+    margin-bottom: 0px;
   }
 }
 
@@ -25780,6 +25789,15 @@ h2.secondary {
   height: 500px;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 1000px) {
+  #banner-algodao {
+    margin-top: -20px;
+    padding: 20px !important;
+  }
+  #banner-algodao p {
+    font-size: 18px !important;
+  }
 }
 @media (max-width: 768px) {
   #banner-algodao {

@@ -187,17 +187,19 @@ A Apras conta com equipe especializada. Toda sua produção, do corte ao acabame
 <section id="logo-alunos"  class="container-fluid p-0 d-flex mb-100">
 
 
-<div id="banner-alunos" class="col-xl-7 col-lg-7 col-sm-7 col-12 p-0">
+<div id="banner-alunos" class="col-xl-7 col-lg-12 col-sm-12 col-12 p-0">
 
 <img alt="Estudantes Dedicados" width height src="<?= get_template_directory_uri().'/img/banner-estudantes.png';?>" class="img-fluid rb-rounded-50" />
 
 </div>
 
-<div id="logo-apras-grande" class="col-xl-5 col-lg-5 col-sm-5  col-12 p-0 mt-25 text-center">
+<div id="logo-apras-grande" class="col-xl-5 col-lg-12 col-sm-12  col-12 p-0 mt-25 text-center">
 
 <img alt="Logotipo Empresa Apras Uniformes" width height src="<?= get_template_directory_uri().'/img/logo-grande-apras.png';?>" class="img-fluid" />
 
 </div>
+
+
 
 </section>
 

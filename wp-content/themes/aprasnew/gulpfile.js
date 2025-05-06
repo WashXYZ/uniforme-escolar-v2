@@ -45,9 +45,9 @@ gulp.task('concatCss', function() {
 
     var stream =  
     
-    gulp.src(['./css/style.css', './css/bootstrap.css', 
-    './css/font-awesome.css']).
-    pipe(gulp_concat('header-inCSS.php')).pipe(gulp.dest('./'));
+    gulp.src(['./css/aditionalCss.css','./css/style.css','./css/bootstrap.css', './css/font-awesome.css'])
+    .pipe(gulp_concat('header-inCSS.php'))
+    .pipe(gulp.dest('./'));
     
     return stream;
     
