@@ -25332,6 +25332,32 @@ html {
   font-weight: 700;
 }
 
+#whatsapp-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+  z-index: 9999999;
+  transition: all 0.3s;
+  width: 40px;
+  height: 40px;
+  font-size: 2.2rem;
+  background: #075E54;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+#whatsapp-btn:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  width: 60px;
+  height: 60px;
+}
+
 #body-nav-flag {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.4);

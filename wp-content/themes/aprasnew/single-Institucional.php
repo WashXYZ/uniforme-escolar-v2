@@ -20,10 +20,6 @@
 
         Trabalhamos com empresas nacionais, comprometidas com práticas e sistemas de produção sustentáveis, que buscam a redução do impacto ambiental, assim como a melhoria das condições de trabalho dos trabalhadores. </p>
 
-
-            <!-- <?php //the_content(); ?>  -->
-      
-
     <?php
     endwhile; 
   

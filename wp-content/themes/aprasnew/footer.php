@@ -7,6 +7,12 @@
 
 </a>
 
+<a href="javascript:void()" id="whatsapp-btn" aria-label="Falar conosco"> 
+
+<i class="fa fa-whatsapp"></i>
+
+</a>
+
 <footer id="contato-footer" class="mt-10 p-30 text-center">
 
 
