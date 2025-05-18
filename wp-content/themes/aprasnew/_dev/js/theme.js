@@ -28,6 +28,7 @@ $(document).ready(function() {
     $(".temp-alert").hide();
     }, 2000);
 
+    if($(".carousel-inner").length)
     $(".carousel-inner").swipe( {
         //Generic swipe handler for all directions
         swipeLeft:function(event, direction, distance, duration, fingerCount) {

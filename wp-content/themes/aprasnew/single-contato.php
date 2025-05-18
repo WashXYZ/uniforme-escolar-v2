@@ -23,6 +23,13 @@ $senderStatus = contatoMailSender();
 
 <p> <a href="mailto:apras@apras.com.br" style="color:white;"> <i class="fa fa-envelope"></i> apras@apras.com.br </a> </p>
 
+
+<a style="color:white;" href="https://api.whatsapp.com/send?phone=5511963515151&text=Olá,%20vi vocês da Apras Uniformes no site oficial e tenho interesse em saber mais sobre Uniformes Escolares" target="_blank" aria-label="Falar conosco"> 
+
+<p><i class="fa-brands fa-whatsapp"></i> Whatsapp (11) 96351-5151</p> 
+
+</a>
+
 </div>
 
 </div>

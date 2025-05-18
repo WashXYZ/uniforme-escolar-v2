@@ -4,3 +4,9 @@
     font-display: fallback;
   }
   
+
+  @font-face {
+    font-family: "ScriptEspecial";
+    src: url("<?= get_template_directory_uri()?>/fonts/Gloss_And_Bloom.ttf") format("truetype");
+    font-display: fallback;
+  }

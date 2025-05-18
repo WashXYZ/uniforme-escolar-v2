@@ -34,7 +34,7 @@ gulp.src([
 './js/bootstrap.js',
 "./node_modules/jquery-touchswipe/jquery.touchSwipe.js", 
 './_dev/js/**/*']).
-pipe(gulp_concat('theme.js')).pipe(gulp.dest('./js'));
+pipe(gulp_concat('footer-inJS.php')).pipe(gulp.dest('./'));
 
 
 return stream;
@@ -45,7 +45,7 @@ gulp.task('concatCss', function() {
 
     var stream =  
     
-    gulp.src(['./css/aditionalCss.css','./css/style.css','./css/bootstrap.css', './css/font-awesome.css'])
+    gulp.src(['./css/aditionalCss.css','./css/style.css','./css/bootstrap.css', './css/all.css'])
     .pipe(gulp_concat('header-inCSS.php'))
     .pipe(gulp.dest('./'));
     

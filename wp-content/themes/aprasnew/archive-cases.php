@@ -23,7 +23,9 @@
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
 <div class="col-xl-3 col-md-6 col-sm-6 col-lg-4 col-12 text-center mb-20">
+    <a href="<?=get_page_uri($post_id)?>">
 <?php the_post_thumbnail(array("class" => " p-25 case-thumbnail")); ?>
+</a>
 </div>
 
 

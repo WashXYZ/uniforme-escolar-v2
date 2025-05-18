@@ -8,7 +8,6 @@ Version: 1.0
 License: GNU General Public License
 Text Domain: aprasdefault
 */
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,500,500i,600,600i,700,700i,800,800i|Source+Sans+Pro:400,400i,600,600i,700,700i&display=swap");
 html,
 body {
   height: 100%;
@@ -25257,6 +25256,10 @@ html {
   width: 300% !important;
 }
 
+.pointer {
+  cursor: pointer !important;
+}
+
 .column-box {
   box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.1);
   padding: 25px;
@@ -25332,6 +25335,20 @@ html {
   font-weight: 700;
 }
 
+@keyframes example {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 #whatsapp-btn {
   position: fixed;
   bottom: 10px;
@@ -25340,6 +25357,9 @@ html {
   transition: all 0.3s;
   width: 40px;
   height: 40px;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
   font-size: 2.2rem;
   background: #075E54;
   color: #fff;
@@ -25412,11 +25432,6 @@ html {
   }
 }
 
-@font-face {
-  font-family: "ScriptEspecial";
-  src: url("fonts/Gloss_And_Bloom.ttf") format("truetype");
-  font-display: fallback;
-}
 a, p, b, small, body, label, input, textarea {
   font-family: "Source Sans Pro";
   color: #5f727f;
@@ -25485,6 +25500,10 @@ h2.secondary {
 
 .text-center {
   text-align: center;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 #top-background {
@@ -25803,7 +25822,19 @@ h2.secondary {
 
 @media (max-width: 1200px) {
   #logo-apras-grande {
-    margin-top: 300px !important;
+    margin-top: 220px !important;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 768px) {
+  #logo-apras-grande {
+    margin-top: 180px !important;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 420px) {
+  #logo-apras-grande {
+    margin-top: 0px !important;
     margin-bottom: 0px;
   }
 }

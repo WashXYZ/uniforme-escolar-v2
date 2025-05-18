@@ -51,7 +51,7 @@ Somos especialistas em produtos confeccionados com tecidos 100% algodão.
 
 <h1> Tecidos em algodão <h1>
 
-<h2> Sinta na pele a diferença! </h2>
+<h2 style="color:#67BEAE"> Sinta na pele a diferença! </h2>
 <div class="w-100 d-flex justify-content-end"> <div class="border-line-white my-30 w-43"></div> </div>
 
 
@@ -61,7 +61,7 @@ As fibras naturais são práticas, flexíveis, antialérgicas,
 possuem toque agradável e deixam a pele respirar.
 
 </p>
-<section><a href="<?= get_site_url() ?>/uniformes-personalizados/" class="btn-confira"> Confira já  </a></section>
+<section><a href="<?= get_site_url() ?>/institucional/tecidos-diferenciados" class="btn-confira"> Confira já  </a></section>
 
 
 </div>
@@ -106,7 +106,7 @@ Nossos valores são integridade, comprometimento, atenção aos detalhes, foco n
 <section class="destaques-content-box d-flex">
 
 <div class="icon-area col-xl-1 col-lg-1 col-sm-1 col-2 p-0">
-<i class="fa fa-clock-o"></i>
+<i class="fa fa-clock"></i>
 </div>
 
 <div class="text-area col-xl-11 col-lg-11 col-sm-11 col-10 col-lg-11 col-sm-11 px-25">
@@ -165,7 +165,7 @@ A Apras conta com equipe especializada. Toda sua produção, do corte ao acabame
 <section class="destaques-content-box d-flex">
 
 <div class="icon-area col-xl-1 col-lg-1 col-sm-1 col-2 p-0">
-<i class="fa fa-envira" aria-hidden="true"></i>
+<i class="fa fa-leaf" aria-hidden="true"></i>
 
 </div>
 

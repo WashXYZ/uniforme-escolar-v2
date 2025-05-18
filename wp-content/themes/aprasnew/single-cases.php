@@ -14,7 +14,7 @@
         <span class="border-line mt-30 mb-30 w-20"></span>
 
 
-    <p style="font-size: 18px;">  A Apras Uniformes Escolares é uma empresa que pensa nos estudantes que dedicam suas vidas buscando sonhos e conquistas. Isso não seria possível sem comprar uniforme colégio <?= the_title(); ?>  de qualidade e com tecnologia têxtil para os anos dentro das instituições.
+    <p style="font-size: 18px;">  A Apras Uniformes Escolares é uma empresa que pensa nos estudantes que dedicam suas vidas buscando sonhos e conquistas. Isso não seria possível sem comprar <b> Uniforme Colégio <?= the_title(); ?> </b> de qualidade e com tecnologia têxtil para os anos dentro das instituições.
     </p>
     <p style="font-size: 18px;"> Há mais de 30 anos no mercado de uniformes, a Apras Uniformes Escolares segue trabalhando com dedicação e carinho para satisfazer às expectativas de pais, alunos e escolas. Os uniformes escolares são desenvolvidos exclusivamente para cada cliente, utilizando a matéria-prima de mais alta qualidade que não agride ao meio ambiente.
     </p>
@@ -47,6 +47,13 @@
 <li>Leggins <i class="fa fa-check"></i> </li>
 <li>E muito mais. </li>
 </ul> 
+<p>
+
+ <a class="w-100 btn btn-lg btn-primary" href="<?= get_site_url() ?>/produtos"> Ver lista de produtos  </a>  
+
+
+</p>
+
 
 </div> 
 
@@ -74,11 +81,15 @@
 
 <p> Santo André, São Bernardo do Campo, São Caetano do Sul, Mauá, Diadema, São Paulo, interior e outros Estados, além de contar com empresas internacionais no rol de clientes. </p>
 
-<p> Faça um contato com a Apras Uniformes Escolares, uniforme colégio Mackenzie em São Paulo de qualidade para sua instituição. </p>
+<p> Faça um contato com a Apras Uniformes Escolares, Uniforme Colégio <?= the_title(); ?>  em São Paulo de qualidade para sua instituição. </p>
 
 <p> A central atende pelo número de telefone <b> (11) 2269-2269 </b> de segunda a sexta das 8h30 às 17h30. </p>
 
-<p> Se preferir pode entrar em contato conosco por Whatsapp ou <a href="https://uniformeescolar.com.br/contato/contato/"> clique aqui <a/> e nos envie um e-mail. </p>
+<p> Se preferir pode entrar em contato conosco por <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=5511963515151&text=Olá,%20vi vocês da Apras Uniformes no site oficial e tenho interesse em saber mais sobre Uniformes Escolares" target="_blank" aria-label="Falar conosco"> 
+
+<i class="fa-brands fa-whatsapp"></i> Whatsapp
+
+</a> ou <a href="https://uniformeescolar.com.br/contato/contato/"> clique aqui <a/> e nos envie um e-mail. </p>
 
 </div>
 </div>

@@ -7,9 +7,9 @@
 
 </a>
 
-<a href="javascript:void()" id="whatsapp-btn" aria-label="Falar conosco"> 
+<a href="https://api.whatsapp.com/send?phone=5511963515151&text=Olá,%20vi vocês da Apras Uniformes no site oficial e tenho interesse em saber mais sobre Uniformes Escolares" id="whatsapp-btn" target="_blank" aria-label="Falar conosco"> 
 
-<i class="fa fa-whatsapp"></i>
+<i class="fa-brands fa-whatsapp"></i>
 
 </a>
 
@@ -32,11 +32,16 @@
 
     wp_footer();
 
+
     
 
   ?>
 
 
+<script>
+  <?php include "footer-inJS.php" ?> 
+
+  </script>
 
   </footer>
 

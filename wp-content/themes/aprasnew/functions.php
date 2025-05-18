@@ -150,10 +150,10 @@ register_nav_menu('primary', __('mainMenu', 'wsxdevstudio'));
 } 
 
 function extScripts() {
- wp_deregister_script('jquery');
- wp_enqueue_style( 'slider', get_template_directory_uri() . '/style.css',false,'1.1','all');
- wp_register_script('main', get_template_directory_uri() .'/js/theme.js', array (), '1.1',  false);
-wp_enqueue_script('main');
+//  wp_deregister_script('jquery');
+//  wp_enqueue_style( 'slider', get_template_directory_uri() . '/style.css',false,'1.1','all');
+//  wp_register_script('main', get_template_directory_uri() .'/js/theme.js', array (), '1.1',  false);
+// wp_enqueue_script('main');
 }
 
 
@@ -250,22 +250,6 @@ function createPostTypes() {
     )
     );
 
-
-    register_post_type( 'clientes',
-    
-    array(
-        'labels' => array(
-            'name' => __( 'Clientes' ),
-            'singular_name' => __( 'clientes' )
-        ),
-        'public' => true,
-        'has_archive' => true,
-        'rewrite' => array('slug' => 'clientes'),
-        'supports' => array( 'thumbnail', 'title','editor', 'author', 'excerpt' ,'headway-seo' )
-    )
-    );
-
-
     register_post_type( 'cases',
     
         array(
@@ -275,7 +259,7 @@ function createPostTypes() {
             ),
             'public' => true,
             'has_archive' => true,
-            'rewrite' => array('slug' => 'cases'),
+            'rewrite' => array('slug' => 'clientes'),
             'supports' => array( 'thumbnail', 'title','editor', 'author', 'excerpt' ,'headway-seo' )
         )
     );
