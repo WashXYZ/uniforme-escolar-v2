@@ -89,7 +89,7 @@
 
 <i class="fa-brands fa-whatsapp"></i> Whatsapp
 
-</a> ou <a href="https://uniformeescolar.com.br/contato/contato/"> clique aqui <a/> e nos envie um e-mail. </p>
+</a> ou <a href="https://uniformeescolar.com.br/contato/contato/"> clique aqui </a> e nos envie um e-mail. </p>
 
 </div>
 </div>

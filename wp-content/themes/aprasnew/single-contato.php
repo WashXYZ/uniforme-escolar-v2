@@ -71,7 +71,7 @@ Escreva sua mensagem
 
 <div class="d-flex justify-content-end">
 
-<button id="formContatoBtn" class="btn btn-primary-dark mt-10 w-100"  type="submit"> <i class="fa fa-envelope"></i> ENVIAR MENSAGEM </button>
+<button id="formContatoBtn" class="btn btn-primary-dark mt-10 w-100 no-radius"  type="submit"> <i class="fa fa-envelope"></i> ENVIAR MENSAGEM </button>
 
 <small class="w-100"> Todos os campos são obrigatórios. </small>
 

@@ -37,11 +37,11 @@ foreach ($slides as $slide) :
 </div>
   <!-- Left and right controls -->
 
- <a class="carousel-control-prev carousel-control pointer" data-bs-slide="prev" data-bs-target="#slider" aria-label="Voltar para o slide anterior">
+ <a class="carousel-control-prev carousel-control pointer" href="#slider" data-bs-slide="prev" data-bs-target="#slider">
     <i class="fa fa-angle-left" aria-hidden="true"></i>
 
   </a>
-  <a class="carousel-control-next carousel-control pointer" data-bs-slide="next" data-bs-target="#slider" aria-label="Ir para o slide seguinte">
+  <a class="carousel-control-next carousel-control pointer" href="#slider" data-bs-slide="next" data-bs-target="#slider">
     <i class="fa fa-angle-right" aria-hidden="true"></i>
 
   </a>

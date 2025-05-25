@@ -8,7 +8,7 @@
 <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,500,500i,600,600i,700,700i,800,800i|Source+Sans+Pro:400,400i,600,600i,700,700i&display=swap" />
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,500,500i,600,600i,700,700i,800,800i|Source+Sans+Pro:400,400i,600,600i,700,700i&display=swap" /> -->
 
 <title>  <?= bloginfo( 'name' ); ?> </title>
 
@@ -19,6 +19,7 @@
 <style>
 <?php include "header-inCSS.php" ?> 
 </style>
+<?php include "fontsCSS.php" ?> 
 
 <header id="top-background">
 

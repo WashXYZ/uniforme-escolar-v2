@@ -25,7 +25,7 @@
 <div class="col-xl-3 col-md-6 col-sm-6 col-lg-4 col-12   ">
 
 
-<div class="produto-thumbnail text-center mb-20 p-20">
+<div class="produto-thumbnail text-center mb-20">
 
 <?php if ( has_post_thumbnail()) {
    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
@@ -48,6 +48,9 @@
 
   <a class="btn btn-outline-primary w-100" href="<?php get_site_url() ?>/contato/contato"> <i class="fa fa-phone"></i> Entrar em contato  </a>
 
+
+  <a class="btn btn-success w-100 mt-1" href="https://api.whatsapp.com/send?phone=5511963515151&text=Olá,%20vi vocês da Apras Uniformes no site oficial e tenho interesse em saber mais sobre <?=get_the_title()?>"> <i class="fa-brands fa-whatsapp"></i> Saiba mais  </a>
+
 </div>
 </div>
 </div>
@@ -62,8 +65,12 @@
 
 <style>
 
-.product- {
+.product-thumbnail {
+  padding: 0px !important;
+}
 
+.product-card-panel {
+ padding:20px;
 }
 
 

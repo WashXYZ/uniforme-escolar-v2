@@ -14,7 +14,7 @@
         <span class="border-line mt-30 mb-30 w-20"></span>
 
 
-    <p style="font-size: 18px;">  A Apras Uniformes Escolares é uma empresa que pensa nos estudantes que dedicam suas vidas buscando sonhos e conquistas. Isso não seria possível sem comprar  <?php $title = get_the_title(); echo str_replace('Comprar', '', $title); ?>  de qualidade e com tecnologia têxtil para os anos dentro das instituições.
+    <p style="font-size: 18px;">  A Apras Uniformes Escolares é uma empresa que pensa nos estudantes que dedicam suas vidas buscando sonhos e conquistas. Isso não seria possível sem <?php if(!str_contains(strtolower(get_the_title()), "confecção")) : ?> comprar <?php endif; ?>  <?php $title = get_the_title(); echo str_replace('Comprar', '', $title); ?>  de qualidade e com tecnologia têxtil para os anos dentro das instituições.
     </p>
     <p style="font-size: 18px;"> Há mais de 30 anos no mercado de uniformes, a Apras Uniformes Escolares segue trabalhando com dedicação e carinho para satisfazer às expectativas de pais, alunos e escolas. Os uniformes escolares são desenvolvidos exclusivamente para cada cliente, utilizando a matéria-prima de mais alta qualidade que não agride ao meio ambiente.
     </p>
@@ -95,6 +95,10 @@ p {
     font-size: 18px !important;
 }
 @media (max-width: 768px) {
+
+    .border-line {
+        width: 50% !important;
+    }
 
     .list {
     flex-direction: column;
